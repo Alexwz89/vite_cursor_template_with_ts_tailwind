@@ -1,0 +1,57 @@
+{
+  "techStack": {
+    "framework": "React",
+    "version": "19.1.0",
+    "typescript": true,
+    "buildTool": "Vite"
+  },
+  "codeStyle": {
+    "indentation": 2,
+    "quotes": "single",
+    "semicolons": true,
+    "maxLineLength": 100
+  },
+  "componentStructure": {
+    "folderPattern": "components/{ComponentName}",
+    "filePattern": {
+      "component": "{ComponentName}.tsx",
+      "types": "types.ts",
+      "index": "index.ts"
+    }
+  },
+  "assets": {
+    "images": "src/assets/images",
+    "icons": "src/assets/icons",
+    "styles": "src/styles",
+    "constants": "src/constants",
+    "fonts": {
+      "path": "src/assets/fonts",
+      "formats": [
+        "ttf"
+      ]
+    }
+  },
+  "development": {
+    "port": 5173,
+    "apiEndpoint": "http://localhost:3333",
+    "mockData": false
+  },
+  "testing": {
+    "framework": "Vitest",
+    "coverage": {
+      "statements": 80,
+      "branches": 80,
+      "functions": 80,
+      "lines": 80
+    }
+  },
+  "performance": {
+    "maxBundleSize": "200kb",
+    "lighthouse": {
+      "performance": 90,
+      "accessibility": 90,
+      "bestPractices": 90,
+      "seo": 90
+    }
+  }
+}
